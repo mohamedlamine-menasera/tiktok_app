@@ -64,7 +64,7 @@ class AuthController extends GetxController {
           email.isNotEmpty &&
           password.isNotEmpty &&
           image != null) {
-        // save out user to our ath and firebase fireStore
+        // save out user to our path and firebase fireStore
         UserCredential cred = await firebaseAuth.createUserWithEmailAndPassword(
           email: email,
           password: password,
